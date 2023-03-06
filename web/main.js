@@ -12,6 +12,20 @@ fetch('https://raw.githubusercontent.com/BlaBl-App/BlaBl-ist/main/servers.json')
             console.log("new ser",newServer.innerHTML)
             newServer.querySelector(".name").innerHTML = server.name;
             newServer.querySelector(".ip").innerHTML = server.ip;
-            serverList.appendChild(newServer)
+            testServer(server.ip, newServer.querySelector("#indicator"));
+            serverList.appendChild(newServer);
+            
         }
         console.log(json)});
+
+
+function testServer(url, indicator){
+    console.log("url",url)
+    fetch(url+"/api")
+    .then((response) => console.log("server test",response))//response.json())
+    .catch((error) => {
+        indicator.classList.add("down");
+        indicator.classList.remove("up");
+    })
+
+}

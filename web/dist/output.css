@@ -537,6 +537,10 @@ video {
   display: grid;
 }
 
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
 .h-\[20vh\] {
   height: 20vh;
 }
@@ -664,6 +668,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 .text-white {
