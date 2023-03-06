@@ -7,6 +7,7 @@ module.exports = {
         'blaBlue': '#5CBCF9',
         'blaDarkBlue': '#1C4651',
         'blaGreen': '#B2F37C',
+        'blaRed':'#ff6f91',
       }
     },
     

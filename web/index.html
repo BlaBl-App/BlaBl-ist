@@ -7,11 +7,16 @@
     <script defer type="text/javascript" src="main.js"></script>
     <link href="style.css" rel="stylesheet">
     <link href="dist/output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
     <title>Blabl'ist</title>
 </head>
 <body class="bg-blaDarkBlue text-white">
     <div class="bg-blaBlue h-[20vh] rounded-b-3xl flex justify-center items-center flex-col  gap-3">
-        <h1 class="text-5xl  font-bold">BlaBl'App</h1>
+        <div class="flex justify-center items-center gap-2">
+            <img class="h-[8vh]" src="logo.png" alt="logo">
+            <h1 class="text-5xl  font-bold">BlaBl'App</h1>
+        </div>
+        
         <h2 class="capitalize">available servers</h2>
     </div>
 
@@ -25,7 +30,7 @@
             <div class="grid grid-cols-3 gap-3 p-4">
                 <p class="name">Mother</p>
                 <p class="ip w-fit m-auto">tchoutchou.ovh:5555</p>
-                <div id="indicator" class="aspect-square rounded-full h-5 ml-auto up"></div>
+                <div id="indicator" class="aspect-square rounded-full h-5 ml-auto up my-auto"></div>
             </div>
         </template>
     </div>
