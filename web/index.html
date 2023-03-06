@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="main.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script defer type="text/javascript" src="main.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
     <title>Blabl'ist</title>
 </head>
-<body>
-    
+<body class="bg-blaDarkBlue text-white">
+    <div class="bg-blaBlue h-[20vh] rounded-b-3xl flex justify-center items-center flex-col  gap-3">
+        <h1 class="text-5xl  font-bold">BlaBl'App</h1>
+        <h2>availble servers</h2>
+    </div>
+
+    <div class="flex w-full h-full justify-center items-center pt-8">
+        <div class="w-3/4">
+        <h3 class="font-semibold text-2xl">Servers: </h3>
+        <div id="server-list" class="border-blaBlue border-2 rounded-2xl mt-5">
+            <div class="flex items-center justify-center"><p>Loading..</p></div>
+        </div>
+        <template id="server">
+            <div class="grid grid-cols-3 gap-3 p-4">
+                <p class="name">Mother</p>
+                <p class="ip w-fit m-auto">tchoutchou.ovh:5555</p>
+                <div class="rounded-full h-5 ml-auto up"></div>
+            </div>
+        </template>
+    </div>
+</div>
 </body>
 </html>
