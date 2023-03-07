@@ -24,16 +24,21 @@
         <div class="w-3/4">
         <h3 class="font-semibold text-2xl">Servers: </h3>
         <div id="server-list" class="border-blaBlue border-2 rounded-2xl mt-5">
-            <div class="flex items-center justify-center"><p>Loading..</p></div>
+            <div class="grid grid-cols-3 gap-3 p-4">
+                <div class="bg-blaBlue opacity-20 w-[20%] rounded-md"></div>
+                <div class="bg-blaBlue opacity-20 w-[20%] rounded-md"></div>
+                <div id="indicator" class="aspect-square rounded-full h-5 ml-auto my-auto bg-blaBlue opacity-20"></div>
+            </div>
         </div>
         <template id="server">
             <div class="grid grid-cols-3 gap-3 p-4">
                 <p class="name">Mother</p>
                 <p class="ip w-fit m-auto">tchoutchou.ovh:5555</p>
-                <div id="indicator" class="aspect-square rounded-full h-5 ml-auto up my-auto"></div>
+                <div id="indicator" class="aspect-square rounded-full h-5 ml-auto bg-blaRed my-auto ease transition-all"></div>
             </div>
         </template>
     </div>
 </div>
+<span class="hidden bg-blaGreen"
 </body>
 </html>

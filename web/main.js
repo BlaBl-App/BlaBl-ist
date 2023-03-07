@@ -8,24 +8,32 @@ fetch('https://raw.githubusercontent.com/BlaBl-App/BlaBl-ist/main/servers.json')
         serverList.innerHTML =""
         for (const server of json.servers){
             let newServer = templateServer.content.cloneNode(true);
-            console.log("new ser",newServer)
-            console.log("new ser",newServer.innerHTML)
             newServer.querySelector(".name").innerHTML = server.name;
             newServer.querySelector(".ip").innerHTML = server.ip;
-            testServer(server.ip, newServer.querySelector("#indicator"));
+            newServer.querySelector("div").id = server.name;
+            
             serverList.appendChild(newServer);
+            testServer(server.ip, server.name);
+            
             
         }
         console.log(json)});
 
 
-function testServer(url, indicator){
-    console.log("url",url)
-    fetch(url+"/api")
-    .then((response) => console.log("server test",response))//response.json())
-    .catch((error) => {
-        indicator.classList.add("down");
-        indicator.classList.remove("up");
+function testServer(url, id){
+    console.log(`#${id} #indicator`)
+    let indicator = document.querySelector(`#${id} #indicator`)
+
+    console.log("url",url+"/api", indicator)
+    fetch("https://"+url+"/api")
+    .then((response) => {
+        console.log("server test",response, response.ok);
+        indicator.classList.add("up");
+        
     })
 
+    
+
 }
+
+
