@@ -1,5 +1,6 @@
 <div align="center">
-<img style="border-radius: 4px;" width="128" alt="logo" src="https://user-images.githubusercontent.com/37497007/223111252-9c797536-da43-47fc-bee5-cfaa66721e23.png">
+<img style="border-radius: 4px;" width="128" alt="logo" src="https://user-images.githubusercontent.com/37497007/225735720-6435ef14-a7bd-4dc4-851b-e2be8ef2d3a6.png">
+
 
 <h1>BlaBl-ist</h1>
 
